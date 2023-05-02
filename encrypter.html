@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Encriptador | MAHG</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="container-left">
+            <div class="container-input">
+                <div class="container-logo">
+                    <a href="./index.html"><img src="img/mahg_logo.svg" alt="MAHG" height="50" width="50"></a>
+                    <a href="https://www.aluracursos.com/"><img src="./img/alura_logo.svg" alt="Logo de Alura"
+                            height="50" width="50"></a>
+                </div>
+                <textarea name="texto" id="texto" cols="30" rows="10" class="input-text"
+                    placeholder="Ingrese su texto aquí"></textarea>
+            </div>
+            <div class="container-button">
+                <div class="alert">
+                    <img src="./img/alert.svg" alt="Símbolo de alerta color gris">
+                    <span>Sólo letras minusculas y sin acentos.</span>
+                </div>
+                <div class="buttons">
+                    <button class="butt button-encrypt" id="submit">Encriptar</button>
+                    <button class="butt button-decrypt" id="decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-right" id="container-right">
+            <div class="container-right_result" id="container-right_result">
+                <img src="./img/muneco.svg" alt="Persona con lupa indicando la búsqueda de algo.">
+                <div class="message">
+                    <h3>Ningún mensaje encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div class="result view" id="result">
+                <p id="parag"></p>
+                <button class=" butt button-decrypt butt-copy" id="clipboard">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center>
+            <p>Hecho con <i class="fa-solid fa-heart" style="color:rgb(190, 15, 15);"></i> por <a href="./index.html"
+                style="text-decoration: none; color: #212A3E;">MAHG</a> | <a href="https://twitter.com/mahg0899"><i
+                    class="fa-brands fa-twitter" style="color: #000000;"></i></a> | <a
+                href="https://github.com/mahg0899"><i class="fa-brands fa-github" style="color: #000000"></i></a> | <a
+                href="https://www.linkedin.com/in/mahg0899/"><i class="fa-brands fa-linkedin-in"
+                    style="color:#000000;"></i></a></p>
+        </center>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
